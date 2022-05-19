@@ -1,0 +1,48 @@
+Assignment #2 Milestone #4
+Name: Jatin hans
+student ID number: 141560201
+Seneca email address: jhans2@myseneca.ca
+course section code: ZDD
+
+1.Function prototypes created by me:
+
+a) commonHelpers.h
+   (1) int currentYear(void);
+   (2) void clearStanadardInputBuffer(void);
+   (3) int getInteger(void);// 1 This function get a valid integer from keyboard
+
+b) account.h
+   (1) void updateAccount(struct Account* account_data);//Modify specific members of Account
+   (2) void updateUserLogin(struct UserLogin* login_data);//Modify specific members of userlogin
+   (3) void updateDemographic(struct Demographic* demo_data);//Modify specific members of Demographic
+   
+c) ticket.h
+   (1) void displayagentticketheader(void);
+   (2) void displayagentticket(struct Ticket* ticket);//Display tickets details for agent
+   (3) void displayuserticketheader(void);//Display ticket detail header for customer
+   (4) void displayuserticket(struct Ticket* ticket);//Display ticket detail for customer
+   (5) void message(struct Ticket* ticket);// Display message as per respective ticket number\
+   (6) void getTicket(struct Ticket* ticket, int greatest);//Prompt user for new ticket detail
+   (7) void updateTicket(struct Ticket* ticket, const char* holder);//modify an existing ticket
+   (8) void updateTicketAgent(struct Ticket* ticket, const char* holder);//modify ticket from agent menu
+   
+(d) accountTicketingUI.h
+  (1) void menuCustomer(struct AccountTicketingData* account_tic, int index);// menu for customer
+  (2) int loadAccounts(struct Account* account_data, int max_size);//load accounts
+  (3) int loadTickets(struct Ticket* tickets, int max_size);//load tickets
+  (4) int loadArchivedAccounts(int max_size);//load archived accounts   
+  (5) int loadArchivedTickets(int max_size);//load archived tickets
+  (6) void populateTickets(const char* filename, struct Ticket* ticket);//Load all the data for tickets from files
+  (7) void populateAccounts(const char* filename, struct Account* account_data);//Load all the data for accounts from files
+  (8) void updateTicketFile(const char* filename, struct Ticket* ticket, int size);//Update changes to tickets file
+  (9) void updateAccountFile(const char* filename, struct Account* account_data, int size);//Update changes to tickets file
+
+2. The two components that I liked to develop were: void displayAccountDetailRecord(const struct Account* account_data) and void populateTickets(const char* filename, struct Ticket* ticket) 
+   as these were ver easy part or components of the code as these were only used for displaying the data og account and tickets and were easy to developed as they require only some 
+   arguements and conditions which helped to display these records or tickets in the specific part requied.
+
+3. The two components that I disliked develpoing were: void menuCustomer(struct AccountTicketingData* account_tic, int index),
+  void menuAgent(struct AccountTicketingData* account_tic, const struct Account* user_detail) these were so long code to write and develop as these functions have so many things to
+  consider, First In developing htis function I have to see what datails are going to show in the output, then I have to consider many different conditions when these are going to
+  display and show proper information of customer menu and agent menu. After writing whole code the sometimes it was appearing sometimes it is not, it was so frustating as I have to
+  check my conditions again and again, and test the lenghty output again and again, After som emodification these two functions worked perfectly for me.

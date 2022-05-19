@@ -1,0 +1,14 @@
+In line number 726 of your output:
+The output should be:
+There are 0 account(s) currently archived.
+^
+But your output is: 
+Script done on Sun 11 Apr 2021 12:02:33 PM EDT
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [T] ASCII code(84)
+but you printed
+  [S] ASCII code(83)
+
